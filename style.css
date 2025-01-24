@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid red; */
+}
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #160335;
+  color: #fff;
+}
+/* .container {
+  display: flex;
+  flex-direction: column;
+} */
+.show {
+  height: 300px;
+  width: 400px;
+  object-fit: cover;
+  border: 1px solid;
+  margin-top: 20px;
+}

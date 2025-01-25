@@ -6,20 +6,35 @@
 body {
   height: 100vh;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
   background: #160335;
   color: #fff;
 }
-/* .container {
+form {
+  padding: 20px;
   display: flex;
-  flex-direction: column;
-} */
-.show {
+  flex-wrap: wrap;
+}
+
+button {
+  margin: 0px 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#show,
+#preview {
   height: 300px;
   width: 400px;
   object-fit: cover;
   border: 1px solid;
   margin-top: 20px;
+}
+#preview img {
+  height: 300px;
+  width: 400px;
+  object-fit: cover;
 }

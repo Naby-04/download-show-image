@@ -8,9 +8,16 @@
   </head>
   <body>
     <div class="container">
-      <input type="file" accept="image/*" />
+      <form action="#" id="Form">
+        <input type="file" accept="image/*" required />
+        <div id="show"></div>
+        <button type="submit" id="transform">Transformer en GIF</button>
+        <div id="preview"></div>
+      </form>
     </div>
-    <div class="show"></div>
+    <script src="https://cdn.jsdelivr.net/npm/gif.js@0.2.0/dist/gif.min.js"></script>
   </body>
+  <script src="gif.js"></script>
+  <script src="gif.worker.js"></script>
   <script src="main.js"></script>
 </html>

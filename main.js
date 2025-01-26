@@ -39,8 +39,10 @@ if (inputFile && showDiv) {
             imgPreview.style.width = "100px";
             imgPreview.style.height = "100px";
             imgPreview.style.backgroundSize = "cover";
+            imgPreview.style.backgroundPosition = "center";
             imgPreview.style.margin = "5px";
             imgPreview.style.display = "inline-block";
+            showDiv.innerText = "";
             showDiv.appendChild(imgPreview);
           };
         };
@@ -94,16 +96,17 @@ if (Form && preview) {
       preview.appendChild(ourGif);
 
       // Ajouter un bouton de téléchargement
+      const showLink = document.getElementById("showLink");
       const downloadLink = document.createElement("a");
       downloadLink.href = url;
       downloadLink.download = "monGIF.gif"; // Nom du fichier téléchargé
       downloadLink.textContent = "Télécharger le GIF";
       downloadLink.style.display = "block";
-      downloadLink.style.marginTop = "10px";
       downloadLink.style.color = "blue";
       downloadLink.style.textDecoration = "underline";
 
-      preview.appendChild(downloadLink);
+      showLink.innerHTML = "";
+      showLink.appendChild(downloadLink);
     });
 
     gif.on("error", function (error) {
